@@ -21,7 +21,8 @@ for (int i = 0; i < arr.Length; i++)
         cot = cot2;
     }
 }
-Console.WriteLine("aa=" + final + "ee=" + (cot+1));
+Console.WriteLine("Longest: " + (cot + 1));
+Console.WriteLine("Number: " + final);
 
 Console.WriteLine("");
 Console.WriteLine("***********EJERCICIO 2+++++++++++++");
