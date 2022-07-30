@@ -1,28 +1,28 @@
 ﻿Console.WriteLine("***********EJERCICIO 1+++++++++++++");
-int[] arr = { 1, 2, 2, 5, 4, 6, 7, 8, 8, 8 };
-int conter = 1;
-int nAx = 1;
-int sec = 0;
-int numero = 0;
+int[] arr = { 1, 2, 4, 4, 2, 6, 7, 8, 8, 8 };
+int cot = 0;
+int final = 0;
+int idxx = 0;
 for (int i = 0; i < arr.Length; i++)
 {
-    if (arr[i] == numero)
+    int cot2 = 0;
+    for (int j = i+1; j < arr.Length; j++)
     {
-        nAx += 1;
+        if (arr[j] != arr[i])
+        {
+            break;
+        }
+        cot2++;
+        idxx = j;
     }
-    else
+    if (cot2 > cot)
     {
-        nAx = 0;
+        final = arr[idxx];
+        cot = cot2;
     }
-    if (nAx > conter)
-    {
-        conter = nAx;
-    }
-    sec = arr[i];
-    numero = arr[i];
 }
-Console.WriteLine("Longest: " + (conter + 1));
-Console.WriteLine("Number: " + sec);
+Console.WriteLine("aa=" + final + "ee=" + (cot+1));
+
 Console.WriteLine("");
 Console.WriteLine("***********EJERCICIO 2+++++++++++++");
 int[] myArray = { 1, 2, 1, 1, 1, 1, 2, 1, 5, 1 };
